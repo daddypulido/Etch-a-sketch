@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Retro-sketch</h1>
+    <div class="grid-container">
+        <div class="leftside">
+            <h1 class="controls-title">Control</h1>
+            <div class="colorChanger">
+              Result:   <input type="text" id="box" value="rgb(255,255,255)">
+              Red:  <input type="range" min="0" max="255" id="red" value="rgb(255,0,255)">
+              Green:  <input type="range" min="0" max="255" id="green" value="rgb(255,0,255)">
+              Blue:  <input type="range" min="0" max="255" id="blue" value="rgb(255,0,255)">
+
+            </div>
+            <button class="size-adjuster" id="btn">Grid Size</button>
+        </div>
+       
+        <div class="container">
+
+        </div>
+    </div>
+   
+
+</body>
+
+
+
+<script src="app.js"></script>
+</html>

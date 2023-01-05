@@ -1,0 +1,106 @@
+body{
+    background-color:#444444;
+}
+
+.grid-container{
+    display: flex;
+    justify-content: space-around;
+   /* align-items: center; */
+    /* flex-direction: column; */
+}
+.container{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    width: 500px;
+    height: 500px;
+    border: 1px solid grey;
+    background-color: white;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    margin-top: 100px;
+    align-items: center;
+    padding: 20px;
+}
+.grid{
+outline: 1px solid grey;
+}
+
+#btn{
+    color:white;
+    background-color: darkblue;
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    height: 45px;
+    font-size: 20px;
+    box-shadow: 0px 0px 5px black;
+    cursor:po
+}
+
+.title {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 60px;
+}
+#btn:hover{
+    background-color: blue;
+    transition: 0.7s;
+}
+#btn:focus{
+    outline-color: transparent;
+    outline-style: solid;
+    
+}
+#btn:active{
+    background-color: rgb(21, 99, 126);
+    transition: 0.01s;
+}
+
+.colorChanger{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding:10px;
+    color:white;    
+}
+
+#box {
+    border:none;
+    outline:none;
+    text-align: center;
+    border-radius: 50px;
+    width: 80%;
+}
+input[type="range"]{
+    -webkit-appearance:none;
+    height:10px;
+    width:100%;
+    border-radius: 50px;
+    outline:none; 
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    height:15px;
+    width: 15px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.colorChanger #red {
+    background:linear-gradient(90deg,#000,red);
+}
+.colorChanger #green {
+    background:linear-gradient(90deg,#000,green);
+}
+.colorChanger #blue {
+    background:linear-gradient(90deg,#000,blue);
+}
